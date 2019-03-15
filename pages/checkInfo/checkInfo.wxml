@@ -1,0 +1,55 @@
+<!--pages/checkInf/checkInf.wxml-->
+<view>
+    <view class="upTheme">
+        <image src='../../image/userB.png' class="userImg"></image>驾驶员编号：{{idCodes}}</view>
+
+    <view class="theme">
+        <view>和瑞公司营运部</view>
+        <view>
+            <picker bindchange="checkMethodChange" value="{{checkMethodIndex}}" range="{{checkMethod}}">
+                <view class="picker">
+                    <span>{{checkMethod[checkMethodIndex]}}</span>
+                </view>
+            </picker>
+        </view>
+        <view>标准</view>
+    </view>
+    <!--拍照模块-->
+    <view class='flex pic-box'>
+        <block wx:key="images" wx:for="{{images}}" wx:for-item="item">
+            <view class='ap-box'>
+                <view class='add-pic'>
+                    <image class='add-pia' src='{{item}}'></image>
+                    <view class='img-de' data-deindex='{{index}}' bindtap='imgDelete1'>
+                        <image src='../../image/close.png' style='width:30rpx;height:30rpx;'></image>
+                    </view>
+                </view>
+            </view>
+        </block>
+        <view class='add-pic' bindtap='addPic1' wx:if="{{images.length<3}}">
+            <image src='../../image/iconAdd.png' class="uglyPic"></image>
+        </view>
+    </view>
+    <!--仪容仪表部分-->
+    <block wx:for='{{array}}' wx:key="list" wx:for-item="item">
+        <view class="firstTitle">
+            <view>{{item.firstTitle}}</view>
+            <block wx:for='{{item.message}}' wx:key="list" wx:for-item="item">
+                <view class="secondTitle">
+                    <view>
+                        <image src='../../image/mi.png' class="miImg"></image>{{item.secondTitle}}</view>
+                    <radio-group class="radio-group" bindchange="radioChange">
+                        <radio value="{{item.id}}-1" checked/>合格
+                        <radio value="{{item.id}}-0" />不合格
+                    </radio-group>
+                </view>
+            </block>
+        </view>
+    </block>
+    <view class='lastMessage'>
+        <view class='lastContent'>
+            <image src='../../image/message.png' class="userImg"></image>备注:</view>
+        <textarea placeholder="点击此处输入信息" bindinput="getMessage" value='{{remark}}' />
+    </view>
+    <button value="submit" bindtap='submitInfo'>提交</button>
+</view>

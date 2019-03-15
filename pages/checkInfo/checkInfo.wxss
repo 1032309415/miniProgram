@@ -1,0 +1,131 @@
+/* pages/checkInf/checkInf.wxss */
+.upTheme{
+  font-size:28rpx;
+  margin-left: 20rpx;
+}
+.theme{
+  width: 750rpx;
+  font-size: 38rpx;
+  margin-top:30rpx;
+  display: flex;
+  flex-direction: row;
+}
+.theme>view:nth-of-type(1){
+  margin-left:100rpx;
+}
+span{
+  color:#14a1fd;
+}
+.miImg{
+  height: 20rpx;
+  width: 20rpx;
+}
+.userImg{
+  height: 40rpx;
+  width: 45rpx;
+}
+.firstTitle{
+  margin:30rpx 0 0 10rpx;
+  letter-spacing: 3rpx;
+  border-top: 3rpx solid rgb(0, 0, 0);
+}
+.firstTitle>view:nth-of-type(1){
+  background: #fff;
+  font-size: 38rpx;
+  margin:10rpx 0 0 36rpx;
+  height: 60rpx;
+}
+.secondTitle{
+  margin:15rpx 15rpx 10rpx 10rpx;
+  border-top: 1rpx dashed rgb(0, 0, 0);
+  padding: 15rpx;
+  line-height: 50rpx;
+  font-size: 36rpx;
+}
+.radio-group{
+  margin-top:18rpx;
+
+}
+.radio-group radio{
+  margin-left:86rpx;
+}
+
+.takePhoto{
+  position: absolute;
+  width: 80rpx;
+  height: 60rpx;
+  z-index: 5;
+  top: 10rpx;
+  right: 20rpx;
+}
+button{
+  background-color: #4594d9;
+  color: #fff;
+  letter-spacing: 40rpx;
+}
+.flex{
+  display: flex;
+  flex-direction: row;
+}
+
+.pic-box{
+  margin-top:20rpx;
+  flex-flow:wrap;
+   width:95%; 
+}
+.ap-box{
+   position: relative;
+}
+.add-pia{
+  width: 160rpx;
+  height: 160rpx;
+  margin-right: 30rpx;
+  position: relative;
+  z-index: 99;
+  background: rgba(224, 219, 219, 0.116);
+}
+.add-pic{
+  width: 160rpx;
+  height: 160rpx;
+  margin-right: 30rpx;
+  position: relative;
+  z-index: 99;
+  margin: 20rpx 30rpx 20rpx 30rpx;
+  background: rgba(224, 219, 219, 0.116);
+}
+.uglyPic{
+  width: 100rpx;
+  height: 100rpx;
+  margin: 30rpx 0 0 30rpx;
+}
+/* 删除图片 */
+.img-de{
+  width:45rpx;
+  height:45rpx;
+  border-radius:50%;
+  position:absolute;
+  z-index: 100;
+  right:-30rpx;
+  top:-23rpx;
+}
+.hong-contant .teamwork-btn{
+  width: 360rpx;
+  height: 88rpx;
+  border-radius: 50rpx;
+  color: white;
+  background-color:#14a1fd;
+  margin: 0 auto;
+  margin-top: 80rpx;
+  margin-bottom: 40rpx;
+}
+.lastMessage{
+border-top: 1rpx solid #000;
+ margin-top: 20rpx;
+}
+.lastContent{
+  margin: 10rpx 0 20rpx 30rpx;
+}
+textarea{
+  display: block;
+  margin: 0 auto;
+}

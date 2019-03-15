@@ -1,0 +1,34 @@
+/* pages/index/index.wxss */
+page{
+  height: 100%;
+  width: 750rpx;
+  background: #ccc;
+}
+.idSweep{
+  position: absolute;
+  width: 750rpx;
+  z-index: 3;
+  top: 76%;
+  left: 34.3%;
+}
+.title{
+  text-align: center;
+  height: 76rpx;
+  width: 240rpx;
+  padding-top:20rpx;
+  letter-spacing: 12rpx; 
+  background: rgb(107, 163, 236);
+  color: #fff;
+  border-radius: 20rpx;
+}
+.backImg{
+  height: 100%;
+  width: 750rpx;
+}
+.backImg image{
+  display: block;
+  position: relative;
+  z-index: -1;
+  height: 99.4%;
+  width: 750rpx;
+}

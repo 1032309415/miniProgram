@@ -1,0 +1,13 @@
+{
+  "pages":[
+    "pages/login/login",
+    "pages/checkInfo/checkInfo"
+    
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#333",
+    "navigationBarTitleText": "和瑞外检",
+    "navigationBarTextStyle":"white"
+  }
+}

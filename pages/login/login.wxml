@@ -1,0 +1,8 @@
+<!--pages/index/index.wxml-->
+
+<view class='backImg'>
+  <image src='../../image/index.png' class="img"></image>
+  <view class='idSweep' bindtap="sweepIdCode">
+    <view class='title'>扫码登录</view>
+  </view>
+</view>
